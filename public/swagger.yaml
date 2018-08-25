@@ -1,7 +1,7 @@
 ﻿openapi: 3.0.0
 info:
-  title: PictureApi
-  description: This is a PictureApi.
+  title: StarterNodeApi
+  description: This is a StarterNodeApi.
   version: 1.0.0
 
   servers:
@@ -17,7 +17,7 @@ paths:
     get:
       summary: returns a string with host address
       tags:
-        - PictureApi
+        - StarterNodeApi
       description: >
         Returns a string with address the server is listening on.
       responses:
