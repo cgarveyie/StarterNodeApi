@@ -1,10 +1,9 @@
-﻿# PictureApi
-Picture API
+﻿# StarterNodeApi
+StarterNodeApi
 
 ### Things to Note
 
 - You need a .env file.  Included in the project is TEMPLATE.env, which has all the variables you need.  .gitignore is already set to ignore .env files.
-- .gitattribute sets .js and .json line endings to LF and .sln line endings to CRLF on checkout.
 
 ## Prerequisites
 
@@ -17,12 +16,12 @@ The easiest way to get started is to clone the repository:
 
 ```sh
 # Get the latest snapshot with https
-git clone https://github.com/jtdarkly/PictureApi.git
+git clone https://github.com/jtdarkly/StarterNodeApi.git
 # or ssh
-git clone git@github.com:jtdarkly/PictureApi.git
+git clone git@github.com:jtdarkly/StarterNodeApi.git
 
 # Change directory
-cd PictureAPI/PictureAPI
+cd StarterNodeApi
 
 # Install NPM dependencies
 npm install
@@ -77,7 +76,7 @@ npm run test:system
 
 ## API Information
 
-- Swagger doc can be found in [PictureApi/src/public](https://github.com/jtdarkly/PictureApi/blob/master/PictureApi/public/swagger.yaml) or URI *host*/static/swagger.yaml
+- Swagger doc can be found in [/src/public](https://github.com/jtdarkly/StarterNodeApi/blob/master/public/swagger.yaml) or URI *host*/static/swagger.yaml
 - Swagger UI can be found at URI *host*/api-docs
 
 ## Dependencies
