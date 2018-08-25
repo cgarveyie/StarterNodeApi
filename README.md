@@ -73,7 +73,7 @@ npm run test:unit
 npm run test:system
 
 ```
-* When run NODE_ENV is always set to 'test'.
+* When run, NODE_ENV is always set to 'test'.
 
 ## API Information
 
