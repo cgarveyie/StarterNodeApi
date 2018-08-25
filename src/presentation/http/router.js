@@ -125,7 +125,6 @@ function createExpressRouter(config, logger) {
 
   router.route('/api/v1.0')
     .get(hello(config))
-    //.post(uploadPicture)
     .all(onlyTheseMethods('GET'));
 
   // 404 routes
