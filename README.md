@@ -60,7 +60,7 @@ npm run dev
 # Test it*
 npm test
 # or
-npm run test:all
+npm run test:all*
 
 # Just integration test*
 npm run test:integration
