@@ -1,0 +1,43 @@
+﻿openapi: 3.0.0
+info:
+  title: PictureApi
+  description: This is a PictureApi.
+  version: 1.0.0
+
+  servers:
+  - url: http://127.0.0.1:{port}/api/v1.0
+    description: Internal staging server for testing
+    variables:
+        port:
+            description: Port to Node application
+            default: '1337'
+
+paths:
+  /:
+    get:
+      summary: returns a string with host address
+      tags:
+        - PictureApi
+      description: >
+        Returns a string with address the server is listening on.
+      responses:
+        '200':
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+        '5XX':
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+            text/plain:
+              schema:
+                type: string
+
+components:
+  schemas:
+    Error:
+      type: object

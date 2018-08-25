@@ -1,0 +1,69 @@
+{
+  "name": "picture-api",
+  "version": "0.0.1",
+  "private": true,
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=8.0.0",
+    "redis": ">=3.2.100"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": " nodemon index.js",
+    "test": "npm run test:all",
+    "test:all": "npm run test:unit && npm run test:integration && npm run test:system",
+    "test:unit": "cross-env NODE_PATH=. NODE_ENV=test mocha --opts test/mocha.opts.unit",
+    "test:integration": "cross-env NODE_PATH=. NODE_ENV=test mocha --opts test/mocha.opts.integration",
+    "test:system": "cross-env NODE_PATH=. NODE_ENV=test mocha --opts test/mocha.opts.system"
+  },
+  "main": "index.js",
+  "homepage": "https://github.com/jtdarkly/PictureApi",
+  "description": "PictureApi",
+  "author": {
+    "name": "Jamie Tudor",
+    "email": "jtdarkly@gmail.com",
+    "url": "https://jtdarkly.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jtdarkly/PictureApi.git"
+  },
+  "bugs": {
+    "email": "jtdarkly@gmail.com",
+    "url": "https://github.com/jtdarkly/PictureApi/issues"
+  },
+  "dependencies": {
+    "app-root-path": "^2.1.0",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.15.0",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "chai-things": "^0.2.0",
+    "cookie-parser": "^1.4.0",
+    "cross-env": "^5.2.0",
+    "dotenv": "^6.0.0",
+    "express": "^4.14.0",
+    "express-session": "^1.15.6",
+    "formidable": "^1.2.1",
+    "helmet": "^3.13.0",
+    "lodash": "^4.17.10",
+    "mocha": "^5.2.0",
+    "morgan": "^1.9.0",
+    "redis": "^2.8.0",
+    "swagger-ui-express": "^3.0.10",
+    "winston": "^3.0.0",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-mocha": "^5.2.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "jsdoc": "^3.5.5",
+    "nodemon": "^1.18.3"
+  }
+}

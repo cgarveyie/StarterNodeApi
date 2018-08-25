@@ -1,0 +1,2 @@
+﻿test/integration/**/*.spec.js
+--recursive
