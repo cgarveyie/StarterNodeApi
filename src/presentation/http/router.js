@@ -26,7 +26,7 @@ const swaggerDocument = YAML.load('./public/swagger.yaml'); // root
 function hello(config) {
   return (req, res) => {
     res.set('Content-Type', 'text/plain');
-    res.status(200).send(`Picture API is listening on ${config.publicBaseUrl}/api/v1.0`);
+    res.status(200).send(`StarterNodeApi is listening on ${config.publicBaseUrl}/api/v1.0`);
   };
 }
 
